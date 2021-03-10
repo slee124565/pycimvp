@@ -8,9 +8,9 @@ install:
   - pip install coveralls
 # command to run tests
 script:
-  - nosetests --cover-erase --with-coverage
-  - sphinx-apidoc -M -E -f -o docs pycimvp
-  - coverage run --source=pycimvp py_tests.py
+  - nosetests --cover-erase --with-coverage --cover-package=pycimvp
+#  - sphinx-apidoc -M -E -f -o docs pycimvp
+#  - coverage run --source=pycimvp py_tests.py
 
 after_success:
   - coveralls
