@@ -11,4 +11,7 @@ install:
 script:
   - nosetests --cover-erase --with-coverage
   - sphinx-apidoc -M -E -f -o docs pycimvp
-  - coveralls --verbose
+  - coverage run --source=pycimvp py_tests.py
+
+after_success:
+  - coveralls
