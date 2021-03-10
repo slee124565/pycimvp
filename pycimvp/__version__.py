@@ -1,7 +1,7 @@
 __title__ = 'pycimvp'
 __description__ = 'A Python library project for TDD + CI.'
 __url__ = 'https://pycimvp.readthedocs.io/'
-__version__ = '1.0.0'
+__version__ = '1.0.3'
 # __build__ = 0x022501
 __author__ = 'Lee Shiueh'
 __author_email__ = 'lee.shiueh@gmail.com'
