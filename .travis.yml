@@ -10,6 +10,5 @@ install:
 # command to run tests
 script:
   - nosetests --cover-erase --with-coverage
-  - sphinx-apidoc -M -E -f -o docs/source twseia
-  - sphinx-build docs docs/_build/html
+  - sphinx-apidoc -M -E -f -o docs pycimvp
   - coveralls --verbose
