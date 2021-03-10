@@ -1,0 +1,15 @@
+language: python
+python:
+  - "3.8"
+  - "3.9"
+# command to install dependencies
+install:
+  - pip install -r requirements.txt
+  - pip install -r test-requirements.txt
+  - pip install coveralls
+# command to run tests
+script:
+  - nosetests --cover-erase --with-coverage
+  - sphinx-apidoc -M -E -f -o docs/source twseia
+  - sphinx-build docs docs/_build/html
+  - coveralls --verbose
